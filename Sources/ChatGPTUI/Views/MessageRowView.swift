@@ -51,6 +51,7 @@ public struct MessageRowView<CustomContent: View>: View {
             } else {
                 Image(image)
                     .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: imageSize.width, height: imageSize.height)
             }
         }
